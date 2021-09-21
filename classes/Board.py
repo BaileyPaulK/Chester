@@ -6,3 +6,8 @@ class Board:
     def AddPart(self, part, qty):
         self.parts.append([part, qty])
  
+    def IsMatch(self, testid):
+        if self.id == testid:
+            return True
+        else:
+            return False

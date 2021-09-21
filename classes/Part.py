@@ -12,3 +12,9 @@ class Part:
             return True
         else:
             return False
+
+    def IsMatch(self, testid):
+        if self.id == testid:
+            return True
+        else:
+            return False
