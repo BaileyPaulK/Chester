@@ -13,13 +13,13 @@ def DataLoad (file, boards, parts):
     row = 2
     while sheet['A' + str(row)].value != None:
         boardid     = sheet['C' + str(row)].value
-        print(boardid)
+        #print(boardid)
         partid      = sheet['F' + str(row)].value
-        print(partid)
+        #print(partid)
         partqty     = sheet['E' + str(row)].value
-        print(partqty)
+        #print(partqty)
         partstock   = sheet['I' + str(row)].value
-        print(partstock)
+        #print(partstock)
 
         board = Exists(boardid, boards)
         if board == False:
