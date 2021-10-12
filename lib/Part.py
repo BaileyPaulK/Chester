@@ -14,7 +14,7 @@ class Part:
             return False
         else:
             self.flag = True
-            print("PartFlag: " + str(self.id))
+            #print("PartFlag: " + str(self.id))
             return True
             
 

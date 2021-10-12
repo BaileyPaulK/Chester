@@ -15,12 +15,12 @@ class Board:
 
     def Pull(self, qty):
         for part in self.parts:
-            print("board: " + str(self.id) + " pulling " + str(part[0].id) + " qty: " + str((part[1] * qty)))
+            #print("board: " + str(self.id) + " pulling " + str(part[0].id) + " qty: " + str((part[1] * qty)))
             part[0].Pull(part[1] * qty)
     
     def IsOut(self):
         for part in self.parts:
             if part[0].IsOut():
                 self.flag = True
-                print("BoardFlag: " + str(self.id))
+                #print("BoardFlag: " + str(self.id))
         return self.flag

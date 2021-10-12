@@ -14,6 +14,6 @@ class Input:
     
     def IsOut(self):
         self.flag = self.board.IsOut()
-        if self.flag:
-            print("OrderFlag: " + str(self.board.id))
+        #if self.flag:
+            #print("OrderFlag: " + str(self.board.id))
         return self.flag
