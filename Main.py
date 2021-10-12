@@ -50,7 +50,7 @@ for order in inputs:
 
 #delete all none input sheets
 for sheetName in wb.get_sheet_names():
-    if not (sheet == 'input'):
+    if not (sheet == 'Input'):
         wb.remove_sheet(wb.get_sheet_by_name(sheet))
 
 for part in parts:
